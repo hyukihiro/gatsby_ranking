@@ -6,9 +6,9 @@ import { connect } from 'react-redux';
 import Layout from '../components/layout';
 import Image from '../components/image';
 import SEO from '../components/seo';
-import Button from '../components/button';
+import Buttons from '../components/buttons';
 
-import { countup } from '../actions/countup';
+import { countup, countdown } from '../actions/countup';
 
 const IndexPage = props => {
   console.log(props);
@@ -22,7 +22,7 @@ const IndexPage = props => {
       <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
         <Image />
       </div>
-      <Button onClick={props.countup} />
+      <Buttons onCountUp={props.countup} onCountDown={props.countdown} />
       <p>{props.counter}</p>
     </Layout>
   );
@@ -33,7 +33,8 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => bindActionCreators({
-  countup
+  countup,
+  countdown
 }, dispatch);
 
 export default connect(
