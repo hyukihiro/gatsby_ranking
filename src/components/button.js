@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 
 const Buttons = props => {
   return (
-    <>
+    <Fragment>
       <button
         type="button"
         onClick={event => {
@@ -22,7 +22,7 @@ const Buttons = props => {
       >
         down
       </button>
-    </>
+    </Fragment>
   )
 }
 

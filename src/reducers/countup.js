@@ -10,11 +10,8 @@ export default (state = initialState, action) =>
     produce(state, draft => {
         switch(action.type) {
             case COUNT_UP:
+            case COUNT_DOWN:
                 draft.counter = action.payload.counter;
                 break;
-
-            case COUNT_DOWN:
-              draft.counter = action.payload.counter;
-              break;
         }
     });

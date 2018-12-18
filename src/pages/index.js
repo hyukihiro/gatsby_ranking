@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 import Layout from '../components/layout';
 import Image from '../components/image';
 import SEO from '../components/seo';
-import Buttons from '../components/buttons';
+import Button from '../components/button';
 
 import { countup, countdown } from '../actions/countup';
 
@@ -22,7 +22,7 @@ const IndexPage = props => {
       <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
         <Image />
       </div>
-      <Buttons onCountUp={props.countup} onCountDown={props.countdown} />
+      <Button onCountUp={props.countup} onCountDown={props.countdown} />
       <p>{props.counter}</p>
     </Layout>
   );
