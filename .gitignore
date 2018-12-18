@@ -166,4 +166,5 @@ dist
 __tests__/snapshot/*.png
 .nyc_output
 coverage
-
+public
+.cache
