@@ -168,3 +168,4 @@ __tests__/snapshot/*.png
 coverage
 public
 .cache
+docs
