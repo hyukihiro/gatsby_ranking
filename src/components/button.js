@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 
-const Buttons = props => {
+const Button = props => {
   return (
     <Fragment>
       <button
@@ -26,4 +26,4 @@ const Buttons = props => {
   )
 }
 
-export default Buttons
+export default Button;
